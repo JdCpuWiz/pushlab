@@ -1,0 +1,77 @@
+# Binaries
+backend/api
+backend/worker
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go
+*.test
+*.out
+vendor/
+go.work
+go.work.sum
+
+# Environment files
+.env
+*.env
+!.env.example
+
+# Configuration with secrets
+config/config.yaml
+!config.example.yaml
+
+# APNs certificates and keys
+*.p8
+*.p12
+*.pem
+certs/
+
+# Database
+*.db
+*.sqlite
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Docker volumes
+postgres_data/
+rabbitmq_data/
+redis_data/
+
+# iOS
+*.xcuserstate
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage.out
+coverage.html

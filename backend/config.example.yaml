@@ -1,0 +1,44 @@
+server:
+  api_port: 8080
+  worker_count: 4
+  read_timeout: 15s
+  write_timeout: 15s
+  shutdown_timeout: 30s
+
+database:
+  host: postgres
+  port: 5432
+  user: pushlab
+  password: ${DB_PASSWORD}
+  database: pushlab
+  ssl_mode: disable
+  max_connections: 25
+  max_idle_connections: 5
+  connection_lifetime: 5m
+
+rabbitmq:
+  url: amqp://guest:guest@rabbitmq:5672/
+  queue_name: notifications
+  prefetch_count: 10
+  reconnect_delay: 5s
+
+redis:
+  host: redis
+  port: 6379
+  password: ${REDIS_PASSWORD}
+  db: 0
+  enabled: false
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiry_hours: 24
+  issuer: pushlab
+
+apns:
+  default_environment: production
+  connection_pool_size: 5
+  max_concurrent_pushes: 100
+
+logging:
+  level: info
+  format: json
