@@ -11,7 +11,7 @@ Get PushLab up and running in 5 minutes!
 ## Step 1: Clone and Configure
 
 ```bash
-git clone https://github.com/yourusername/pushlab
+git clone https://github.com/JdCpuWiz/pushlab
 cd pushlab
 
 # Copy and edit environment file

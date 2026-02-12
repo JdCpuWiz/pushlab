@@ -56,7 +56,7 @@ A self-hosted push notification service for homelab users to send notifications 
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/yourusername/pushlab
+git clone https://github.com/JdCpuWiz/pushlab
 cd pushlab
 
 # Copy environment file and configure
